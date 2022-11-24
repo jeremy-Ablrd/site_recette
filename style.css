@@ -24,7 +24,7 @@ div.categories {
 
 div.contenu {
     background-color: white;
-    margin: 0px 10% 50px 10%;
+    margin: 0px 3% 20px 2%;
     padding: 50px;
     box-shadow: 0 0 20px 5px rgb(105, 105, 105);
 }
@@ -56,6 +56,7 @@ div.separateur {
 }
 
 table.info {
+    height: 80px;
     position: absolute;
     bottom:0;
     width: 100%;
@@ -69,9 +70,13 @@ div.info {
     position: relative;
 }
 
+table.info th {
+    font-size: 14px;
+}
+
 table.info td {
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
 
 }
 
@@ -83,18 +88,15 @@ img.info {
     background-color: rgb(201, 200, 200);
 }
 
+div.column {
+    width: 100%;
+    margin-top: 20px;
+}
+
 div.column1 {
     display: inline-block;
 }
 
-div.column2 {
-    float: right;
-}
-
-div.column {
-    width: 45%;
-    margin-top: 20px;
-}
 
 div.column h2 {
     text-align: center;
@@ -135,4 +137,46 @@ table.preparation td.preparation_etape {
 
 table.preparation tr{
     height: 45px;
+}
+
+/*paramètre style pour ordi*/
+@media only screen and (min-width: 768px) {
+    div.contenu {
+        margin: 0px 10% 50px 10%;
+        padding: 50px;
+    }
+
+    table.info {
+   height: 80px;
+    }
+
+    table.info th {
+        font-size: 16px;
+    }
+    
+    table.info td {
+        font-size: 14px;
+    }   
+
+    div.column {
+    width: 45%;
+    margin-top: 20px;
+    }
+
+    /*div.column1 {
+        display: inline-block;
+    }*/
+
+    div.column2 {
+        float: right;
+    }
+}
+
+/*paramètre style pour grand ecran*/
+@media only screen and (min-width: 1080px) {
+    div.contenu {
+        margin-left: auto;
+        margin-right: auto;
+        width: 739px;
+    }
 }
